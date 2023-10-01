@@ -1,0 +1,14 @@
+C:\Users\tamar\OneDrive\Documents\School\Csharp\C23 Ex04 Ori 208939074 Tamar 315441139\Ex04.Menus.Delegates\bin\Debug\Ex04.Menus.Delegates.dll.config
+C:\Users\tamar\OneDrive\Documents\School\Csharp\C23 Ex04 Ori 208939074 Tamar 315441139\Ex04.Menus.Delegates\bin\Debug\Ex04.Menus.Delegates.dll
+C:\Users\tamar\OneDrive\Documents\School\Csharp\C23 Ex04 Ori 208939074 Tamar 315441139\Ex04.Menus.Delegates\bin\Debug\Ex04.Menus.Delegates.pdb
+C:\Users\tamar\OneDrive\Documents\School\Csharp\C23 Ex04 Ori 208939074 Tamar 315441139\Ex04.Menus.Delegates\obj\Debug\Ex04.Menus.Delegates.csproj.AssemblyReference.cache
+C:\Users\tamar\OneDrive\Documents\School\Csharp\C23 Ex04 Ori 208939074 Tamar 315441139\Ex04.Menus.Delegates\obj\Debug\Ex04.Menus.Delegates.csproj.CoreCompileInputs.cache
+C:\Users\tamar\OneDrive\Documents\School\Csharp\C23 Ex04 Ori 208939074 Tamar 315441139\Ex04.Menus.Delegates\obj\Debug\Ex04.Menus.Delegates.dll
+C:\Users\tamar\OneDrive\Documents\School\Csharp\C23 Ex04 Ori 208939074 Tamar 315441139\Ex04.Menus.Delegates\obj\Debug\Ex04.Menus.Delegates.pdb
+C:\Users\orish\OneDrive - The Interdisciplinary Center Herzliya IDC\hw4 new\C23 Ex04 Ori 208939074 Tamar 315441139\Ex04.Menus.Delegates\bin\Debug\Ex04.Menus.Delegates.dll.config
+C:\Users\orish\OneDrive - The Interdisciplinary Center Herzliya IDC\hw4 new\C23 Ex04 Ori 208939074 Tamar 315441139\Ex04.Menus.Delegates\bin\Debug\Ex04.Menus.Delegates.dll
+C:\Users\orish\OneDrive - The Interdisciplinary Center Herzliya IDC\hw4 new\C23 Ex04 Ori 208939074 Tamar 315441139\Ex04.Menus.Delegates\bin\Debug\Ex04.Menus.Delegates.pdb
+C:\Users\orish\OneDrive - The Interdisciplinary Center Herzliya IDC\hw4 new\C23 Ex04 Ori 208939074 Tamar 315441139\Ex04.Menus.Delegates\obj\Debug\Ex04.Menus.Delegates.csproj.AssemblyReference.cache
+C:\Users\orish\OneDrive - The Interdisciplinary Center Herzliya IDC\hw4 new\C23 Ex04 Ori 208939074 Tamar 315441139\Ex04.Menus.Delegates\obj\Debug\Ex04.Menus.Delegates.csproj.CoreCompileInputs.cache
+C:\Users\orish\OneDrive - The Interdisciplinary Center Herzliya IDC\hw4 new\C23 Ex04 Ori 208939074 Tamar 315441139\Ex04.Menus.Delegates\obj\Debug\Ex04.Menus.Delegates.dll
+C:\Users\orish\OneDrive - The Interdisciplinary Center Herzliya IDC\hw4 new\C23 Ex04 Ori 208939074 Tamar 315441139\Ex04.Menus.Delegates\obj\Debug\Ex04.Menus.Delegates.pdb
