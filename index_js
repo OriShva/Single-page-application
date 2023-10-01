@@ -1,0 +1,50 @@
+
+"use strict";
+
+/* open email tab acording to the details filled in the form (contact section) 
+when clicking "contact me" */
+
+document.getElementById("btnsubmit").addEventListener('click',function(event){
+    event.preventDefault();
+    let mail = "ori.shvartz@post.runi.ac.il"
+    let name = document.getElementById("name_contact").value
+    if ( name == "" )
+    {
+        alert ( "Please fill in the 'Name' box." );
+     }
+    let contact_mail = document.getElementById("email_contact").value
+    elif ( contact_mail == "" )
+    {
+        alert ( "Please fill in the 'Email' box." );
+     }
+    let subject = document.getElementById("subject_contact").value
+    elif ( subject == "" )
+    {
+        alert ( "Please fill in the 'Subject' box." );
+     }
+    let message = document.getElementById("message_contact").value
+    elif ( message == "" )
+    {
+        alert ( "Please fill in the 'Message' box." );
+     }
+    // email body
+    let message_sub = subject + " from " + name
+    let mailbody = message +"%0d%0a contact email: " + contact_mail
+    //open template email
+
+     if( contact_mail != "" & name != "" & message != "" & subject != ""){
+    document.location = "mailto:" + mail + "?subject=" + message_sub + "&body=" + mailbody
+     }
+
+
+})
+
+
+ // under width 768px: active the nav bar and show the nav list
+ let bar = document.querySelector('.bar')
+ let nav = document.querySelector('nav ul')
+ 
+ bar.addEventListener('click',()=>{    
+     nav.classList.toggle('active')
+ })
+

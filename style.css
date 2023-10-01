@@ -1,0 +1,1005 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+/* general style for the web */
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+/* body style*/
+body{
+    width: 100% ;
+    max-width: max-content;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    background: #121212;
+    overflow-y: overlay;
+    color: #fff;
+    overflow-x: hidden;
+    
+    
+}
+/* header style -nav,logo,nav bar*/
+.header {
+    display:flex;
+    justify-content: space-between;
+    padding: 30px 50px 25px;  
+    position: fixed; 
+    background-color: #000;
+    z-index: 100;
+    left: 0px;
+    right: 0px;
+    transition: 0.5s;
+   
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+nav{
+    position:relative;
+    padding-top: 15px;  
+}
+nav .bar {
+    position: absolute;
+    right: 50px;
+    font-size: 25px;
+    margin-top: -10px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;   
+}
+
+nav ul{
+    display: flex;
+    cursor: pointer;       
+} 
+
+nav .bar .close{
+    display: none;
+}
+nav .bar.active .open{
+    display: none;
+}
+nav .bar.active .close{
+    display: initial;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+/*Select and style a link on the nav when you mouse over it*/
+nav ul li:hover a{
+    color: gray;
+}
+/* home page style */
+.home{
+    padding-top: 150px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    overflow-x: hidden;
+    margin-bottom: 2%;
+    
+}
+
+.home .text {
+    margin-top: 150px;
+} 
+.home .text>span{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.home .text h1{
+    font-size: 80px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.home .text h3{
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: 50;
+    color: #fff;
+   
+}
+.buttons {
+    margin-top: 30px;
+}
+/* about page style */
+#about{
+    background: gray;
+    padding-block: 100px;
+    text-align: center;
+    overflow-x: hidden;
+    justify-content:center; 
+    height: 100vh;
+    width: 100%;
+    display: block;    
+}
+
+.about h1{  
+    font-size: 50px;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content:inherit;    
+}
+
+a { 
+    color: #fff; 
+    text-decoration: none;
+
+}
+
+#about :hover a{
+    text-decoration:underline;
+}
+
+.about p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    color: #ccc;
+}
+
+.about h4{
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 35px; 
+    justify-content:inherit; 
+    font-weight:200;
+    margin-bottom: 10px; 
+}
+
+.about ul{
+    padding-top: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    list-style-type: none;
+    justify-content:center; 
+}
+
+.about .logo{
+    display: flex;
+    position: inherit;
+    justify-content:center; 
+   
+}
+
+.about .logo img{ 
+    padding: 5px;
+    width:150px;    
+  }
+
+  .about .logo .image2{
+    margin-top: 30px;
+
+  }
+
+  .about .logo .image3{  
+    margin-top: 30px;
+
+  }
+/* education page style- create timeline */
+  #education{
+    height: 100vh;
+    display: block;
+    text-align: center;
+    padding-block: 100px;
+    justify-content:center; 
+   
+}
+
+  .education h1{   
+    font-size: 50px;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content:inherit;    
+}
+
+.education .timeline{
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    
+}
+.education .timeline .component .date{
+    margin: 0 20px 20px 20px;
+    text-align: right;
+}
+
+.education .timeline .middle{
+    position: relative;
+    background: #fff;
+}
+.education .timeline .middle .point{
+    position:absolute;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.education .timeline .componentBgr{
+    margin: 20px 20px 20px 20px;
+    padding: 1.5em;
+    background: rgba(255,255,255,0.2);
+    box-shadow:  0 0 5px rgba(0, 0, 0,0.2);
+    border-radius: 10px;
+}
+
+.education .timeline .componentBgr .timelineTitle{
+   margin:0;
+   font-size:1.15em;   
+}
+
+.education .timeline .componentBgr .timelinep{
+    margin:0;
+    font-size:1em;   
+ }
+
+ .education .timeline .datetoday{
+    margin: 0 20px 20px 20px;
+    text-align: left;
+}
+/* skills page style */
+#skills{
+    background: gray;
+    display: block;
+    padding-block: 100px;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden; 
+    justify-content:center;  
+}
+
+.skills h1{  
+    margin-bottom: 10px;
+    font-size: 50px;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content:inherit;      
+}
+
+.skillBox {
+    padding: 100px;
+    display: flex;
+    justify-content: center;  
+}
+
+.skillBox .left {
+    width: 700px;
+    padding: 70px;
+    transform: translateX(-100px); 
+    transition: 0.5s;   
+}
+
+.skillBox .left p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 25px;
+    letter-spacing: 1px;
+    position: absolute;
+}
+
+.skillBox .right {
+    width: 900px;
+    padding: 10px 70px 20px 0;
+    transform: translateX(70px);
+    transition: 0.5s
+}
+
+.skillBox .right .progress {
+    margin-bottom: 20px;
+}
+
+.skillBox .right .progress .info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillBox .right .progress .info span {
+    font-size: 18px;
+}
+
+.skillBox .right .progress .range {
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skillBox .right .progress .range::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: #DA8483;
+}
+.skillBox .right .progress.java .range::before {
+    width: 80%;
+}
+
+.skillBox .right .progress.HTML .range::before {
+    width: 40%;
+}
+
+.skillBox .right .progress.CSS .range::before {
+    width: 40%;
+}
+
+.skillBox .right .progress.JavaScript .range::before {
+    width: 30%;
+}
+
+.skillBox .right .progress.python .range::before {
+    width: 70%;
+}
+
+.skillBox .right .progress.SQL .range::before {
+    width: 40%;
+}
+/* pilates/employment page style*/
+  #pilates{
+    height: 100vh;
+    display: block;
+    padding-block: 100px;
+    margin-bottom: 2%;
+    width: 100%;
+
+}
+
+  .pilates h1{  
+    font-size: 50px;
+    position: relative;
+    display: flex;
+    justify-content:center;    
+}
+
+.pilates .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.pilatesBox .left {
+    transform: translateX(20px); 
+    
+}
+
+.pilates .pilatesBox .left .text {
+    text-align: justify;
+    position: absolute;
+    font-size: 16px;
+    line-height: 35px;
+    display: inline;
+    width:60%;
+   
+  }
+
+  .pilates .right img {
+    width: 30%;
+    filter: contrast(50%);
+    position: relative;
+    border-radius: 10px;
+    float: right;
+    padding-right: 2%;
+    float: right;
+  }
+
+  .pilates .pilatesBox .left .text ol{
+    column-count: 2;
+    column-gap: 50px;
+  }
+
+  .pilates .pilatesBox .left h3 {
+    color: gray;
+  }
+
+.pilates .pilatesBox .left .text :hover a{
+    text-decoration:underline;
+}
+
+.pilates .container .text .readmore p{
+  font-size: 12px;  
+}
+
+/* hobbies page style*/
+#hobbies{
+    background: gray;
+    display: block;
+    text-align: center;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+    padding-block: 100px;
+    
+}
+
+.hobbies h1{  
+    margin-bottom: 10px;
+    font-size: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content:center;   
+   
+}
+.hobbies .conteiner{
+    margin:0 auto;
+
+}
+.hobbies .images{
+    width: 100%;
+    display: flex;
+    justify-content:center; 
+}
+
+.images .imagesBox{
+    margin: 8px;
+}
+.hobbies .conteiner .images .imagesBox{
+    position: relative;
+    height: 300px;
+    width: 210px;
+    border-radius: 6px;
+}
+
+.images .imagesBox img{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    transition: transform 0.2s linear; 
+   
+
+}
+ .imagesBox:hover img{
+    transform:scale(1.05) ;
+
+}
+.imagesBox h3{
+text-align: center;
+
+}
+
+.imagesBox p{
+position:absolute;
+text-align: center;
+font-size: 14px;   
+}
+/* contact page style */   
+#contact{
+    display: block;
+    padding-block: 130px;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.contact .container{
+    width: 100%;
+    height: 100vh;
+    display: flex; 
+}
+.contactBox {
+    display: flex;
+    justify-content: center;
+}
+
+.contactBox .left {
+    width: 700px;
+    margin: 0 30px;
+}
+
+.contactBox .left span {
+    letter-spacing: 1px;
+    font-size: 25px;
+    line-height: 70px;
+}
+
+.contactBox .left form .genInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactBox .left form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contactBox .left form input:focus {
+    outline: none;
+}
+
+.contactBox .left form textarea:focus {
+    outline: none;
+}
+
+.contactBox .left form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #000;
+    margin: 10px 0;
+}
+
+.contactBox .right {
+    width: 700px;
+    margin: 0 30px;
+}
+
+.contactBox .right span {
+    font-size: 25px;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+
+.contactBox .right p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.infoBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.infoBox i {
+    font-size: 25px;
+    margin-right: 40px;
+    color: #DA8483;
+}
+
+.infoBox .user div {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.infoBox .user div:nth-child(2) {
+    color: #aaa;
+}
+
+/* butten style in the web*/
+.btn {
+    padding: 10px 35px;
+    border-radius: 5px;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #DA8483;
+    cursor: pointer;
+    color: #DA8483;
+    transition: 0.3s;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #DA8483;
+    transition: 0.3s;
+}
+
+.btn:hover a {
+    color: #000;
+}
+
+.btn:hover {
+    background: #DA8483;
+    color: #000;
+    transform: scale(1.1);
+}
+
+.topBtn {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #DA8483;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.topBtn i {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width:1024px) {
+    .header {
+        padding: 30px 20px 25px;
+    }
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    .home .text h1 {
+        font-size: 70px;
+        ;
+    }
+
+    .home .text>span {
+        font-size: 18px;
+    }
+
+    .home .text h3 {
+        font-size: 28px;
+    }
+
+    .about h1{ 
+        font-size: 40px;
+    }
+
+    .about p{
+        font-size: 16px;   
+    }
+    .about h4{
+        font-size: 25px;
+    }
+
+    .about ul{
+    font-size: 16px;
+    }
+
+    .education h1{ 
+        font-size: 40px;
+    }
+
+    .education .timeline .componentBgr .timelineTitle{
+        font-size:1.1em; 
+    }
+    .skillBox .right {
+        padding: 30px 40px 0;
+    }
+    .skillBox h1 {
+        font-size: 40px;
+    }
+    
+    
+    .pilates h1{  
+        font-size: 40px;
+    }
+    #hobbis {
+        padding-block: 50px;
+    }
+    .pilates .pilatesBox .left .text {
+        font-size: 16px;
+        line-height: 30px;
+   
+    }
+
+    .pilates .pilatesBox .left .text ol{
+        margin: 0 5px;
+      }
+    .hobbies h1{  
+        font-size: 40px;
+        padding-bottom: 70px;
+    }
+    .hobbies .conteiner .images .imagesBox{
+        height: 200px;
+        width: 150px;     
+    }
+.imagesBox p{
+    font-size: 13px;
+}
+
+
+@media (max-width:768px){
+    nav ul{ 
+        opacity: 0;
+        pointer-events: none;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        z-index: 100;
+        right: -10px;
+        border-radius: 5px;
+        padding: 20px 30px 10px;
+        background: #121212;
+        transition: 0.5s;
+    }
+
+    nav ul.active{
+        pointer-events: all;
+         opacity: 1;
+        
+    }
+    .header {
+        padding: 10px 10px 15px;
+    }
+
+    nav .bar{
+        display: initial;
+        right: 56;
+    }
+    
+    .home{
+        padding: 100px;
+        padding-top: 200px;
+    }
+
+    .home .text h1 {
+        font-size: 45px;
+        line-height: 70px;
+    }
+
+    .home .text>span {
+        font-size: 14px;
+    }
+    .home .text h3 {
+        font-size: 23px;
+    }
+
+    .home {
+        padding-top: 150px;
+    }
+
+    .about h1{ 
+        font-size: 35px;
+    }
+
+    .about p{
+        font-size: 14px;   
+    }
+    .about h4{
+        font-size: 20px;
+    }
+
+    .about ul{
+    font-size: 14px;
+    }
+
+    .education h1{ 
+        font-size: 35px;
+    }
+
+    .education .timeline .componentBgr .timelineTitle{
+        font-size:1em; 
+    }
+    .skillBox .right {
+        padding: 20px 30px 0;
+    }
+    
+    .skillBox h1 {
+        font-size: 35px;
+    }
+
+    .skillBox .left p {
+        font-size: 14px;
+    }
+
+    .skillBox .right .progress .info span {
+        font-size: 16px;
+    }
+
+    #pilates{
+        padding:80px;
+       }
+       .pilates h1{  
+           font-size: 35px;
+       }
+
+       .pilates h3{ 
+        font-size: 17px;
+       }
+      
+       .pilates .pilatesBox .left .text {
+           font-size: 14px;
+           line-height: 25px;
+       }
+
+       .hobbies h1{  
+        padding-bottom: 70px; 
+        font-size: 35px;
+    }
+    .imagesBox h3{
+        font-size: 15px;    
+        }
+
+        .imagesBox p{
+            font-size: 13px; 
+        }
+
+}
+@media (max-width:630px) {
+    .header {
+        padding: 25px 50px;
+    }
+    .logo {
+        font-size: 35px;
+    }
+    nav .bar {
+        right: 35px;
+    }
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        align-items: left;
+        z-index: 100;
+        right: -30px;
+        border-radius: 5px;
+        padding: 30px 30px 10px;
+        background: #121212;
+    }
+    .home {
+        padding-top: 120px;
+        height: 100vh;
+    }
+    .home .text {
+        margin-top: 30px;
+        padding-bottom: 40px;
+    }
+    .about h1{ 
+        font-size: 30px;
+    }
+
+    .about p{
+        font-size: 13px;   
+    }
+
+    .about ul{
+    font-size: 13px;
+    }
+
+    .education h1{ 
+        font-size: 30px;
+    }
+
+    .education .timeline .componentBgr .timelinep{
+        margin:0;
+        font-size:0.8em;   
+     }
+    
+    .skill h1{
+        font-size: 30px;
+    }
+    .skillBox .right {
+        padding: 10px 5px 0;
+        transform: translateX(30px);
+    }
+    .left p {
+        font-size: 14px;
+    }
+    .left .text {
+        font-size: 14px;
+    }
+    .skillBox .left {
+        padding-top: 10px;
+    }
+    
+       .pilates h1{  
+           font-size: 30px;
+           padding-bottom: 5px;
+       }
+
+       .pilates h3{ 
+        font-size: 13px;
+       }
+      
+       .pilates .pilatesBox .left .text {
+           font-size: 12px;
+           line-height: 18px;
+       }
+
+       .hobbies h1{  
+        font-size: 30px;
+         }
+
+        .imagesBox h3{
+        font-size: 13px;    
+        }
+
+        .hobbies .conteiner .images .imagesBox{
+            height: 150px;
+            width: 100px;     
+        }
+
+        .imagesBox p{
+            font-size: 13px; 
+        }
+        #contact {
+            padding: 50px 80px;
+        }
+
+        .contactBox .left span {
+            font-size: 20px;
+            line-height: 55px;
+        }
+        .contactBox .right span {
+            font-size: 18px;
+            line-height: 55px;
+        }
+        .infoBox i {
+            margin-right: 25px;
+        }
+
+        .topBtn{
+            bottom: 55px;
+        }
+       
+}
+
+@media (max-width:490px) {
+    nav ul li a {
+        font-size: 14px;
+    }
+    nav .bar {
+        right: 30px;
+    }   
+    #about{
+        padding: 50px;
+    }
+    
+    .about .logo img{ 
+        width:80px;    
+      }
+
+    
+    .education .timeline .componentBgr .timelinep{
+      
+    font-size:0.6em;   
+    }
+
+    .education .timeline .componentBgr .timelineTitle{
+        font-size:1em; 
+    }
+
+    .pilates .pilatesBox .left .text {
+        font-size: 11px;
+        line-height: 12px;
+    }
+
+    .imagesBox h3{
+        font-size: 12px;    
+        }
+
+        .imagesBox p{
+            font-size: 11px; 
+        }
+        .hobbies .conteiner .images .imagesBox{
+            height: 120px;
+            width: 40px;     
+        }
+       
+    .contactBox {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+}
